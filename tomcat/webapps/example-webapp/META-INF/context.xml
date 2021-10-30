@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context reloadable="true">
+
+	<Resource name="jdbc/pokemon_go" auth="Container" type="javax.sql.DataSource"
+		url="jdbc:mysql://10.10.1.13:3306/pokemon_go?connectTimeout=0&amp;socketTimeout=0&amp;autoReconnect=true"
+		driverClassName="com.mysql.cj.jdbc.Driver"
+		username="poke_user"
+		password="poke_pass"
+		/>
+
+</Context>

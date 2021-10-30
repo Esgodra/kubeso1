@@ -1,0 +1,31 @@
+CREATE TABLE clientes(
+cod_cliente NUMBER NOT NULL,
+nombres VARCHAR(30) NOT NULL,
+apellidos VARCHAR(30) NOT NULL,
+direccion VARCHAR(50) NULL,
+CONSTRAINT pkClientes PRIMARY KEY (cod_cliente)
+);
+
+CREATE SEQUENCE clientes_seq
+START WITH 1
+INCREMENT BY 1;
+
+INSERT INTO CLIENTES (cod_cliente, nombres, apellidos, direccion) VALUES(clientes_seq.NEXTVAL, 'Carlos Alejandro', 'Montalvo Murga', 'Mixco');
+
+
+
+
+
+CREATE TABLE IMC(
+codigo NUMBER NOT NULL,
+altura NUMBER NOT NULL,
+unidades_altura VARCHAR(30) NOT NULL,
+peso NUMBER NOT NULL,
+unidades_peso VARCHAR(30) NOT NULL,
+IMC NUMBER NOT NULL,
+clasificacion_IMC VARCHAR(30) NOT NULL,
+CONSTRAINT pkIMC PRIMARY KEY(codigo)
+);
+CREATE SEQUENCE IMC_seq
+START WITH 1
+INCREMENT BY 1;
